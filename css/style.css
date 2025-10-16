@@ -44,3 +44,64 @@ div {
   border-radius: 5px;
   background: #f9f9f9;
 }
+
+/* --- Всплывающее окно --- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 700px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+.task-text p {
+  margin-bottom: 10px;
+}
+
+/* --- Кнопка "Показать ответ" --- */
+#showAnswerBtn {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#showAnswerBtn:hover {
+  background: #0056b3;
+}
+
+/* --- Блок с ответом --- */
+#answerBlock {
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
