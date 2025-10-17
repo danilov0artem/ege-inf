@@ -51,4 +51,10 @@ document.addEventListener("DOMContentLoaded", () => {
   window.onclick = (event) => {
     if (event.target === modal) modal.style.display = "none";
   };
+  // Закрытие окна по клавише Esc
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && modal.style.display === "block") {
+      modal.style.display = "none";
+    }
+  });
 });
