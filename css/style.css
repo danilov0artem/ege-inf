@@ -105,3 +105,67 @@ div {
   margin-top: 15px;
   transition: all 0.3s ease;
 }
+
+/* --- Переключатель темы --- */
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2000;
+  transition: background 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #ddd;
+}
+
+/* --- Тёмная тема --- */
+body.dark {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body.dark a {
+  color: #66b2ff;
+}
+
+body.dark a:hover {
+  color: #99ccff;
+}
+
+body.dark div {
+  background: #2a2a2a;
+  border-color: #444;
+}
+
+body.dark .modal-content {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+body.dark .close {
+  color: #bbb;
+}
+
+body.dark .close:hover {
+  color: white;
+}
+
+body.dark #showAnswerBtn {
+  background: #444;
+}
+
+body.dark #showAnswerBtn:hover {
+  background: #666;
+}
+
+body.dark .theme-toggle {
+  background: #444;
+  color: #eee;
+  border-color: #666;
+}
