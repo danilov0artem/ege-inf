@@ -25,6 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
 
+        // Перерисовываем LaTeX формулы с помощью MathJax
+        if (window.MathJax && window.MathJax.typesetPromise) {
+          window.MathJax.typesetPromise([content]);
+        }
+
         // Обработка кнопки "Показать ответ"
         const showAnswerBtn = document.getElementById("showAnswerBtn");
         const answerBlock = document.getElementById("answerBlock");
